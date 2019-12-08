@@ -1,2 +1,18 @@
 server:
   port: 8762
+  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *    
+
+logging:
+  level: 
+    com.netflix.discovery: OFF
